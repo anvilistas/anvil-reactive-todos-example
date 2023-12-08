@@ -14,4 +14,4 @@ class Form1(Form1Template):
         
     @render_effect
     def set_items(self):
-        self.todos_panel.items = [todo for todo in todo_store.todos]
+        self.todos_panel.items = [todo for todo in ]
