@@ -7,7 +7,16 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: new_todo_input
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'XCGOQR,JVUFAY'}
+    event_bindings: {pressed_enter: add_todo}
+  - name: todos_panel
+    properties: {item_template: Form1.ItemTemplate1}
+    type: RepeatingPanel
+    layout_properties: {grid_position: 'LEGCXY,RFIQJH'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
