@@ -6,7 +6,7 @@ renamed: true
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
 dependencies:
 - dep_id: dep_n8ydqtj966u4ur
-  version: {dev: false}
+  version: {dev: true}
   resolution_hints: {app_id: N7KFE4YBWMGWJ5OX, name: anvil-reactive, package_name: anvil_reactive}
 - dep_id: dep_vcwjyucdy2wp3
   version: {dev: true}
