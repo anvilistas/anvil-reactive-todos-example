@@ -2,7 +2,6 @@ from ._anvil_designer import Form1Template
 from ..Todos import todo_store
 from anvil_reactive.main import render_effect
 
-
 class Form1(Form1Template):
     def __init__(self, **properties):
         self.init_components(**properties)
