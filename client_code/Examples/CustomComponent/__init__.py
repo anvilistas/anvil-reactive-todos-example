@@ -1,7 +1,7 @@
 from ._anvil_designer import CustomComponentTemplate
 
 class CustomComponent(CustomComponentTemplate):
-    """Progress Circle Component uses reactvity"""
+    """See ProgressCircle Component, which uses reactvity"""
     def __init__(self, **properties):
         self.init_components(**properties)
         self.slider_1_change()

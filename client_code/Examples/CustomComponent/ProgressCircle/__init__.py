@@ -16,7 +16,7 @@ class ProgressCircle(ProgressCircleTemplate):
         self.dom_nodes["circle"].setAttribute("stroke", self.color)
         self.dom_nodes["text"].setAttribute("fill", self.color)
 
-    @computed
+    @computed # use computed to avoid unnecessary re-renders if _progress keeps changing above 100%
     @property # we don't need @property here - but it makes autocompletion easier
     def _progress(self):
         value = self.value or 0 # could be None
