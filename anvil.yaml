@@ -7,12 +7,21 @@ dependencies:
   resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
 services:
 - source: /runtime/services/tables.yml
-  client_config: {}
+  client_config: {enable_v2: true}
   server_config: {}
 startup: {type: form, module: Examples.TodosExample}
-package_name: anvil_reactive_todos_example
+package_name: anvil_reactive_examples
 allow_embedding: false
-name: anvil-reactive-todos-example
+name: anvil-reactive-examples
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
 startup_form: null
+db_schema:
+  counter:
+    client: search
+    server: full
+    columns:
+    - name: value
+      admin_ui: {width: 200, order: 0}
+      type: number
+    title: Counter
 renamed: true

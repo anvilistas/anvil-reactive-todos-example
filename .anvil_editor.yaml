@@ -1,11 +1,16 @@
 unique_ids:
   forms:
+    Examples.Counter1: '1702433264795574303915412.1465'
+    Examples.Counter2: '1702433269995111368482569.05174'
+    Examples.Counter3: '1702433273313310733888838.9093'
+    Examples.Counter4: '1702433275605287524225658.46423'
     Examples.TodosExample: WVBXLN5NXT3AWI7OYLR5KRA6PQU4QIPN
     Examples.TodosExample.ItemTemplate1: '1702041233153651067420645.9465'
   modules:
     Examples: '1702433117387893582899438.6266'
     Examples.TodosExample.TodosStore: '1702040307588675539713780.2528'
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1702433841206864343960035.6157'
   assets:
     standard-page.html: KHMYQQXCVMG4GH6YZJ2ECEEQJXJRSZCE
     theme.css: IQQFQ4JGUASADQ7WVLKPOCO2ZNYTM4XQ

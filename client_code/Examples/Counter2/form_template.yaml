@@ -1,0 +1,26 @@
+container: {type: ColumnPanel}
+components:
+- name: title_label
+  properties: {align: center, bold: true}
+  type: Label
+  layout_properties: {grid_position: 'USAIXO,ISSPEV'}
+  data_bindings: []
+- name: flow_panel_1
+  properties: {align: center}
+  type: FlowPanel
+  layout_properties: {grid_position: 'NCNMTH,SWMYVK'}
+  components:
+  - name: btn_plus
+    properties: {text: '', icon: 'fa:plus'}
+    type: Button
+    layout_properties: {}
+    event_bindings: {click: btn_plus_click}
+  - name: label_1
+    properties: {}
+    type: Label
+  - name: btn_minus
+    properties: {text: '', icon: 'fa:minus'}
+    type: Button
+    layout_properties: {}
+    event_bindings: {click: btn_minus_click}
+is_package: true

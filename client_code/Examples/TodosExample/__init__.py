@@ -11,7 +11,7 @@ class TodosExample(TodosExampleTemplate):
         if description:
             self.new_todo_input.text = ""
             todo_store.add_todo(description)
-        
+
     @render_effect
     def set_items(self):
-        self.todos_panel.items = [todo for todo in todo_store.todos]
+        self.todos_panel.items = todo_store.todos
