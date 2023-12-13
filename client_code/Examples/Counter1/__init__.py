@@ -1,4 +1,3 @@
-import anvil.server
 from ._anvil_designer import Counter1Template
 from anvil_reactive.main import signal, render_effect, effect
 
