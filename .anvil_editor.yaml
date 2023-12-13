@@ -1,12 +1,14 @@
 unique_ids:
   forms:
     Examples.TodosExample: WVBXLN5NXT3AWI7OYLR5KRA6PQU4QIPN
+    Examples.CustomComponent.ProgressCircle: '170247111406746969789053.2641'
     Examples.Writeback1: '1702468034898605097985678.8146'
     Examples.TodosExample.ItemTemplate1: '1702041233153651067420645.9465'
     Examples.Counter3: '1702433273313310733888838.9093'
     Examples.Counter4: '1702433275605287524225658.46423'
     Examples.Counter2: '1702433269995111368482569.05174'
     Examples.Counter1: '1702433264795574303915412.1465'
+    Examples.CustomComponent: '1702471470171705827850037.5541'
     Examples.Writeback2: '1702468563050717512832383.1996'
     Examples.Writeback3: '1702468370985363558908525.2457'
   modules:

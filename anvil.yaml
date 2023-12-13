@@ -9,7 +9,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {enable_v2: true}
   server_config: {}
-startup: {type: form, module: Examples.Counter1}
+startup: {type: form, module: Examples.CustomComponent}
 package_name: anvil_reactive_examples
 allow_embedding: false
 name: anvil-reactive-examples
