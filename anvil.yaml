@@ -1,6 +1,6 @@
 dependencies:
 - dep_id: dep_vcwjyucdy2wp3
-  version: {dev: true}
+  version: {dev: false}
   resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
 - dep_id: dep_mh6ytbmex5bm6v
   version: {dev: false}

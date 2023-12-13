@@ -17,10 +17,10 @@ class ProgressCircle(ProgressCircleTemplate):
         self.dom_nodes["text"].setAttribute("fill", self.color)
 
     @computed
-    @property
+    @property # we don't need @property here - but it makes autocompletion easier
     def _progress(self):
         value = self.value or 0 # could be None
-        return max(0, min(100, value))
+        return round(max(0, min(100, value)))
 
     @render_effect
     def render_progress(self):
