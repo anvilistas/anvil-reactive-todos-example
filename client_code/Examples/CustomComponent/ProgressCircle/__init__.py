@@ -16,6 +16,7 @@ class ProgressCircle(ProgressCircleTemplate):
         self.dom_nodes["circle"].setAttribute("stroke", self.color)
         self.dom_nodes["text"].setAttribute("fill", self.color)
 
+    # @computed_property
     @computed
     @property
     def _progress(self):
