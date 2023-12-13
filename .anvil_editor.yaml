@@ -1,9 +1,10 @@
 unique_ids:
   forms:
-    Form1: WVBXLN5NXT3AWI7OYLR5KRA6PQU4QIPN
-    Form1.ItemTemplate1: '1702041233153651067420645.9465'
+    Examples.TodosExample: WVBXLN5NXT3AWI7OYLR5KRA6PQU4QIPN
+    Examples.TodosExample.ItemTemplate1: '1702041233153651067420645.9465'
   modules:
-    Todos: '1702040307588675539713780.2528'
+    Examples: '1702433117387893582899438.6266'
+    Examples.TodosExample.TodosStore: '1702040307588675539713780.2528'
   server_modules: {}
   assets:
     standard-page.html: KHMYQQXCVMG4GH6YZJ2ECEEQJXJRSZCE
