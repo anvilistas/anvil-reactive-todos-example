@@ -8,5 +8,3 @@ class CustomComponent(CustomComponentTemplate):
 
     def slider_1_change(self, **event_args):
         self.progress_circle_1.value = self.slider_1.value
-
-    

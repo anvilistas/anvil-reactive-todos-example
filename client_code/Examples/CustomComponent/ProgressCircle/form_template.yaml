@@ -14,3 +14,4 @@ is_package: true
 custom_component: true
 properties:
 - {name: value, type: number, important: true, default_binding_prop: true}
+- {name: color, type: color, default_value: '#76c7c0', important: true}
