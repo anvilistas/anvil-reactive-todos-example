@@ -3,7 +3,7 @@ dependencies:
   version: {dev: true}
   resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
 - dep_id: dep_mh6ytbmex5bm6v
-  version: {dev: true}
+  version: {version_tag: v0-dev}
   resolution_hints: {app_id: N7KFE4YBWMGWJ5OX, name: anvil-reactive, package_name: anvil_reactive}
 services:
 - source: /runtime/services/tables.yml
