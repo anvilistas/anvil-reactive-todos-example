@@ -3,7 +3,7 @@ import anvil.server
 from anvil.tables import app_tables
 from anvil_reactive.main import signal, render_effect, effect, bind, reactive_class, reactive_instance
 
-counter = reactive_instance(app_tables.counter.get())
+counter_row = reactive_instance(app_tables.counter.get())
 
 
 class Counter4(Counter4Template):
@@ -13,11 +13,10 @@ class Counter4(Counter4Template):
 
     @render_effect
     def render(self):
-        self.label_1.text = counter["value"]
+        self.label_1.text = counter_row["value"]
 
     def btn_plus_click(self, **event_args):
-        anvil.server.call('update_counter', counter, 1)
+        anvil.server.call('update_counter', counter_row, 1)
 
     def btn_minus_click(self, **event_args):
-        anvil.server.call('update_counter', counter, -1)
-        print(counter["value"])
+        anvil.server.call('update_counter', counter_row, -1)
