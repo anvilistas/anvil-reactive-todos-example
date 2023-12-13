@@ -1,5 +1,5 @@
 from ._anvil_designer import ProgressCircleTemplate
-from anvil_reactive.main import render_effect, signal, computed_property, computed
+from anvil_reactive.main import render_effect, signal, computed
 import math
 
 class ProgressCircle(ProgressCircleTemplate):
@@ -24,7 +24,6 @@ class ProgressCircle(ProgressCircleTemplate):
 
     @render_effect
     def render_progress(self):
-        print("rendering progress", self._progress)
         progress = self._progress
         offset = self.circ * (1 - progress / 100)
         self.dom_nodes["circle"].setAttribute("stroke-dashoffset", offset)
