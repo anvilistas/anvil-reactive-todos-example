@@ -1,5 +1,5 @@
 from ._anvil_designer import ProgressCircleTemplate
-from anvil_reactive.main import render_effect, signal, computed_property
+from anvil_reactive.main import render_effect, signal, computed_property, computed
 import math
 
 class ProgressCircle(ProgressCircleTemplate):
@@ -16,16 +16,15 @@ class ProgressCircle(ProgressCircleTemplate):
         self.dom_nodes["circle"].setAttribute("stroke", self.color)
         self.dom_nodes["text"].setAttribute("fill", self.color)
 
-    @computed_property
-    def progress(self):
+    @computed
+    @property
+    def _progress(self):
         value = self.value or 0 # could be None
         return max(0, min(100, value))
 
     @render_effect
-    def render(self):
-        progress = self.progress
-        if progress > 100:
-            progress = 100
+    def render_progress(self):
+        progress = self._progress
         offset = self.circ * (1 - progress / 100)
         self.dom_nodes["circle"].setAttribute("stroke-dashoffset", offset)
         self.dom_nodes["text"].textContent = f"{progress:.0f}%"
