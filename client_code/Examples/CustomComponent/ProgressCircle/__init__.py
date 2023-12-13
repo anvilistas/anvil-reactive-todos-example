@@ -1,5 +1,5 @@
 from ._anvil_designer import ProgressCircleTemplate
-from anvil_reactive.main import render_effect, signal, computed_property, computed
+from anvil_reactive.main import render_effect, signal, computed
 import math
 
 class ProgressCircle(ProgressCircleTemplate):
@@ -16,7 +16,6 @@ class ProgressCircle(ProgressCircleTemplate):
         self.dom_nodes["circle"].setAttribute("stroke", self.color)
         self.dom_nodes["text"].setAttribute("fill", self.color)
 
-    # @computed_property
     @computed
     @property
     def _progress(self):
