@@ -1,26 +1,26 @@
-container: {type: ColumnPanel}
 components:
-- name: title_label
+- data_bindings: []
+  layout_properties: {grid_position: 'HYCSXB,SXATDR'}
+  name: title_label
   properties: {align: center, bold: true}
   type: Label
-  layout_properties: {grid_position: 'HYCSXB,SXATDR'}
-  data_bindings: []
-- name: flow_panel_1
-  properties: {align: center}
-  type: FlowPanel
-  layout_properties: {grid_position: 'YNKEGL,ORKMDH'}
-  components:
-  - name: btn_plus
-    properties: {text: '', icon: 'fa:plus'}
-    type: Button
+- components:
+  - event_bindings: {click: btn_plus_click}
     layout_properties: {}
-    event_bindings: {click: btn_plus_click}
+    name: btn_plus
+    properties: {icon: 'fa:plus', text: ''}
+    type: Button
   - name: label_1
     properties: {}
     type: Label
-  - name: btn_minus
-    properties: {text: '', icon: 'fa:minus'}
-    type: Button
+  - event_bindings: {click: btn_minus_click}
     layout_properties: {}
-    event_bindings: {click: btn_minus_click}
+    name: btn_minus
+    properties: {icon: 'fa:minus', text: ''}
+    type: Button
+  layout_properties: {grid_position: 'YNKEGL,ORKMDH'}
+  name: flow_panel_1
+  properties: {align: center}
+  type: FlowPanel
+container: {type: ColumnPanel}
 is_package: true

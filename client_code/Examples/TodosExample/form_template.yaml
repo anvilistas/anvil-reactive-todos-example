@@ -1,23 +1,23 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - name: new_todo_input
+- components:
+  - event_bindings: {pressed_enter: add_todo}
+    layout_properties: {grid_position: 'XCGOQR,JVUFAY'}
+    name: new_todo_input
     properties: {}
     type: TextBox
-    layout_properties: {grid_position: 'XCGOQR,JVUFAY'}
-    event_bindings: {pressed_enter: add_todo}
-  - name: todos_panel
+  - layout_properties: {grid_position: 'LEGCXY,RFIQJH'}
+    name: todos_panel
     properties: {item_template: Examples.TodosExample.ItemTemplate1}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'LEGCXY,RFIQJH'}
-- type: FlowPanel
-  properties: {}
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
   name: navbar_links
-  layout_properties: {slot: nav-right}
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

@@ -16,7 +16,8 @@ class TodoStore:
         todo["completed"] = not todo["completed"]
 
     def delete_todo(self, todo):
-        self.todos.remove(todo)
+        # self.todos.remove(todo)
+        self.todos.sort()
 
     @effect
     def save_todos(self):
