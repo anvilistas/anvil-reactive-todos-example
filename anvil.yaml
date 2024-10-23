@@ -1,27 +1,27 @@
-dependencies:
-- dep_id: dep_vcwjyucdy2wp3
-  version: {dev: false}
-  resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
-- dep_id: dep_mh6ytbmex5bm6v
-  version: {dev: false}
-  resolution_hints: {app_id: N7KFE4YBWMGWJ5OX, name: anvil-reactive, package_name: anvil_reactive}
-services:
-- source: /runtime/services/tables.yml
-  client_config: {enable_v2: true}
-  server_config: {}
-startup: {type: form, module: Examples.Counter1}
-package_name: anvil_reactive_examples
 allow_embedding: false
-name: anvil-reactive-examples
-runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
-startup_form: null
 db_schema:
   counter:
     client: search
-    server: full
     columns:
-    - name: value
-      admin_ui: {width: 200, order: 0}
+    - admin_ui: {order: 0, width: 200}
+      name: value
       type: number
+    server: full
     title: Counter
+dependencies:
+- dep_id: dep_vcwjyucdy2wp3
+  resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
+  version: {dev: false}
+- dep_id: dep_mh6ytbmex5bm6v
+  resolution_hints: {app_id: N7KFE4YBWMGWJ5OX, name: anvil-reactive, package_name: anvil_reactive}
+  version: {dev: false}
+name: anvil-reactive-examples
+package_name: anvil_reactive_examples
 renamed: true
+runtime_options: {client_version: '3', server_spec: null, server_version: python3-full, version: 2}
+services:
+- client_config: {enable_v2: true}
+  server_config: {}
+  source: /runtime/services/tables.yml
+startup: {module: Examples.Counter3, type: form}
+startup_form: null
