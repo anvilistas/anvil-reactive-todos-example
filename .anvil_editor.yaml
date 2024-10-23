@@ -16,6 +16,7 @@ unique_ids:
     Examples.Writeback3: '1702468370985363558908525.2457'
   modules:
     Examples: '1702433117387893582899438.6266'
+    Examples.Counter: '1729687787505549025441391.5137'
     Examples.TodosExample.TodosStore: '1702040307588675539713780.2528'
   scripts: {}
   server_modules:
