@@ -5,6 +5,15 @@ from uuid import uuid4
 todos_db = indexed_db
 
 from anvil_reactive.main import reactive_list
+from anvil_reactive.main._computations import StoreSignal
+
+lt = StoreSignal.__lt__
+
+def __lt__(self, other):
+    print(self, other)
+    return lt(self, other)
+
+StoreSignal.__lt__ = lt
 
 def sort(self, *args, **kws):
     debugger
@@ -12,7 +21,7 @@ def sort(self, *args, **kws):
     self.LIST_LEN.update()
     return rv
 
-reactive_list.sort = sort
+# reactive_list.sort = sort
 
 @reactive_class
 class TodoStore:
@@ -27,6 +36,7 @@ class TodoStore:
 
     def delete_todo(self, todo):
         # self.todos.remove(todo)
+        # self.todos.sort(key=lambda v: v["description"])
         self.todos.sort()
 
     @effect
