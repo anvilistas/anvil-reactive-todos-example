@@ -6,7 +6,7 @@ class Counter3(Counter3Template):
     def __init__(self, **properties):
         self.counter = 0
         self.title_label.text = type(self).__name__
-        # writeback(self, "foo", self, "counter", "x-change")
+        writeback(self, "foo", self, "counter", "x-change")
         
         self.init_components(**properties)
 
