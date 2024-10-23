@@ -14,7 +14,7 @@ dependencies:
   version: {dev: false}
 - dep_id: dep_mh6ytbmex5bm6v
   resolution_hints: {app_id: N7KFE4YBWMGWJ5OX, name: anvil-reactive, package_name: anvil_reactive}
-  version: {dev: false}
+  version: {branch: fix/reactive-class}
 name: anvil-reactive-examples
 package_name: anvil_reactive_examples
 renamed: true
