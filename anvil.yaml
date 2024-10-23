@@ -14,7 +14,7 @@ dependencies:
   version: {dev: false}
 - dep_id: dep_mh6ytbmex5bm6v
   resolution_hints: {app_id: N7KFE4YBWMGWJ5OX, name: anvil-reactive, package_name: anvil_reactive}
-  version: {branch: fix/reactive-class}
+  version: {branch: master}
 name: anvil-reactive-examples
 package_name: anvil_reactive_examples
 renamed: true
@@ -23,5 +23,5 @@ services:
 - client_config: {enable_v2: true}
   server_config: {}
   source: /runtime/services/tables.yml
-startup: {module: Examples.Counter3, type: form}
+startup: {module: Examples.TodosExample, type: form}
 startup_form: null
